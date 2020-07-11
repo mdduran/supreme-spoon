@@ -58,7 +58,7 @@ GameState SupremeSpoonGame::showGameplayScreen()
         arduboy.clear();
         playerInput();
         drawWorld();
-        drawPlayer();
+        drawCursor();
 
         if (arduboy.justPressed(A_BUTTON))
         {
@@ -136,7 +136,7 @@ void SupremeSpoonGame::debugDrawPlayerCoordinates(int mapX, int mapY) {
     tinyfont.print(mapY);
 }
 
-void SupremeSpoonGame::drawPlayer() {
+void SupremeSpoonGame::drawCursor() {
     arduboy.fillRect(PLAYER_X_OFFSET, PLAYER_Y_OFFSET, PLAYER_SIZE, PLAYER_SIZE, BLACK);
 }
 

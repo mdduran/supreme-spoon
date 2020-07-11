@@ -68,7 +68,7 @@ private:
     Tinyfont tinyfont = Tinyfont(arduboy.getBuffer(), Arduboy2::width(), Arduboy2::height());
     GameState currGameState = GameState::TITLE;
     void drawWorld();
-    void drawPlayer();
+    void drawCursor();
     void debugDrawPlayerCoordinates(int mapX, int mapY);
     void playerInput();
 
